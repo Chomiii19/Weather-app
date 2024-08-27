@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #2a2834;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.location-btn {
+  border: solid 1px transparent;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.location-btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.838);
+  color: #00feba;
+}
+
+.search {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.search-bar {
+  border: solid 1px transparent;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.578);
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 0.6rem 0 0 0.6rem;
+  color: white;
+}
+
+.search-bar::placeholder {
+  color: white;
+}
+
+.search-btn {
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.578);
+  border: none;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.city-name {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.img {
+  width: 224px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.details div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details div img {
+  width: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.details div p {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.temperature img {
+  top: 0;
+}
+
+.weather {
+  padding-bottom: 1rem;
+}
